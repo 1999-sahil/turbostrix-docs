@@ -1,3 +1,4 @@
+import Logo from '@/components/logo';
 import type { BaseLayoutProps } from 'fumadocs-ui/layouts/shared';
 
 /**
@@ -10,12 +11,21 @@ import type { BaseLayoutProps } from 'fumadocs-ui/layouts/shared';
 export const baseOptions: BaseLayoutProps = {
   nav: {
     // can be JSX too!
-    title: 'My App',
+    title: (
+      <Logo />
+    ),
+    transparentMode: 'top',
   },
+  githubUrl: 'https://github.com',
   links: [
     {
       text: 'Documentation',
       url: '/docs',
+      active: 'nested-url',
+    },
+    {
+      text: 'Blog',
+      url: '/blogs',
       active: 'nested-url',
     },
   ],

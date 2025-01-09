@@ -10,5 +10,18 @@ export default {
     './mdx-components.{ts,tsx}',
     './node_modules/fumadocs-ui/dist/**/*.js',
   ],
+  theme: {
+    extend: {
+      fontFamily: {
+        ubuntu: ["Ubuntu Condensed", "serif"],
+        raleway: ["Raleway", "serif"],
+        poppins: ["Poppins", "serif"],
+        openSans: ["Open Sans", "serif"],
+        mukta: ["Mukta", "serif"],
+        kanit: ["Kanit", "serif"],
+        inter: ["Inter", "serif"],
+      },
+    },
+  },   
   presets: [createPreset()],
 };
