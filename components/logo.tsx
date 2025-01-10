@@ -26,6 +26,7 @@ const Logo = () => {
         <Image src="/logo-light.png" alt="Turbostrix Light Logo" width={24} height={24} />
       )}
       <h2 className='text-sm font-semibold font-poppins'>Turbostrix</h2>
+      <h3 className='text-xs font-normal text-[#00c774]'>DOCS</h3>
     </div>
   );
 };
